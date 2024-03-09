@@ -22,5 +22,9 @@ Route::get('/post', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "Ryan",
+        "email" =>"ghost@gmail.com"
+        
+    ]);
 });
